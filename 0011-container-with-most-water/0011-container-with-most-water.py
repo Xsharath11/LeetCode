@@ -7,7 +7,7 @@ class Solution:
             max_vol = max(vol, max_vol)
             if height[l] < height[r]:
                 l += 1
-            elif height[r] <= height[l]:
+            else:
                 r -= 1
 
         return max_vol
